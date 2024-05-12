@@ -8,6 +8,11 @@ import Why from '@/components/Why';
 import ContactForm from '@/components/ContactPage/ContactForm';
 import Head from 'next/head';
 
+const metadata = {
+    title: 'Dream Education / Services',
+    description: 'Welcome To Dream Education.',
+    icon: ['/public/favicon.ico?v=1']
+}
 
 const variants = {
     hidden: { opacity: 0 },

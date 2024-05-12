@@ -8,7 +8,7 @@ const FeaturedService = () => {
         <div className="my-auto">
           <div className="we-are-content">
             <div className="section-title">
-              <p className="text-base font-semibold leading-7 highlight">Fuel Your Brand's Storytelling</p>
+              <p className="text-base font-semibold leading-7 highlight">Fuel Your Brand&apos;s Storytelling</p>
               <h2 className="pb-12 primary-heading">Our Featured <span className="highlight">Content <br />Writing Services</span></h2>
             </div>
 
