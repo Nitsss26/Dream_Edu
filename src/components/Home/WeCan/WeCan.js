@@ -7,16 +7,16 @@ const WeCan = () => {
   const services = [
     {
       name: "Higher Level Education",
-      imgUrl: image.seoOptimization,
+      imgUrl: image.semMarketing,
       bgColour: "bg-green-100"
-    }, {
-      name: "Test Creation",
-      imgUrl: image.social,
-      bgColour: "bg-slate-100"
-    }, {
-      name: "Writing Services",
-      imgUrl: image.webStrategy,
-      bgColour: "bg-yellow-100"
+      // }, {
+      //   name: "Test Creation",
+      //   imgUrl: image.social,
+      //   bgColour: "bg-slate-100"
+      // }, {
+      //   name: "Writing Services",
+      //   imgUrl: image.webStrategy,
+      //   bgColour: "bg-yellow-100"
     },
     {
       name: "K-12 Education",
@@ -39,11 +39,12 @@ const WeCan = () => {
       name: "Video Creation",
       imgUrl: image.ppcTrend,
       bgColour: "bg-pink-100"
-    }, {
-      name: "Books Writing",
-      imgUrl: image.webStrategy,
-      bgColour: "bg-yellow-100"
     },
+    // {
+    //   name: "Books Writing",
+    //   imgUrl: image.webStrategy,
+    //   bgColour: "bg-yellow-100"
+    // },
   ]
 
   const [activeSlide, setActiveSlide] = useState(0);

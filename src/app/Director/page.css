@@ -176,8 +176,8 @@
         padding: 0.2rem;
     }
     .bubble-animation{
-        left: 50%;
-        top:17%;
+           left: 50%;
+        top:2%;
     }
     
     .circle-animation{
@@ -195,8 +195,8 @@
     .half-circle-animation{
         background: linear-gradient(to right, #EF0D75, #FFCC00);
         padding: 4px 4px 0 0;
-        left: 50%;
-        bottom:53%;
+        left: -15%;
+        bottom:47%;
     }
     
     .half-circle-animation .half-circle-animation-child{
