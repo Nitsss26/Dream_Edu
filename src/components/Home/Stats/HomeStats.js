@@ -5,10 +5,10 @@ import { CheckBadgeIcon, CodeBracketIcon, CursorArrowRippleIcon, PresentationCha
 
 const HomeStats = () => {
   const stats = [
-    { id: 1, name: 'Text Solutions', value: <CountUp start={0} end={1000} duration={2} />, icon: CodeBracketIcon },
+    { id: 1, name: 'Text Solutions', value: <CountUp start={0} end={200000} duration={2} />, icon: CodeBracketIcon },
     { id: 2, name: ' Experts ', value: <CountUp start={0} end={200} duration={2} />, icon: CheckBadgeIcon },
-    { id: 3, name: 'Video Solutions', value: <CountUp start={0} end={5000} duration={2} />, icon: CursorArrowRippleIcon },
-    { id: 4, name: 'Happy Clients', value: <CountUp start={0} end={100} duration={2} />, icon: PresentationChartLineIcon },
+    { id: 3, name: 'Video Solutions', value: <CountUp start={0} end={150000} duration={2} />, icon: CursorArrowRippleIcon },
+    { id: 4, name: 'Experience', value: <CountUp start={0} end={4} duration={4} />, icon: PresentationChartLineIcon },
   ]
   return (
     <div>

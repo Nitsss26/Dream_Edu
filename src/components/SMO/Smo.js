@@ -7,7 +7,7 @@ const Smo = () => {
     <section className="we-are-area md:-mt-24 py-8 md:py-32 flex items-center">
       <div className="app__container grid grid-cols-1 md:grid-cols-2 gap-8 relative lg:px-10 xl:px-0">
 
-        <div className="my-auto order-2 md:order-1 -me-10">
+        <div className="my-auto order-2 md:order-1 md:-me-10">
           <div className="we-are-content xs:ms-2">
             <div className="section-title">
               <h2 className="pb-12 primary-heading">

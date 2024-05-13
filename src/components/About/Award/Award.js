@@ -12,7 +12,7 @@ const Award = () => {
     { id: 1, name: 'Satisfied customer', value: <CountUp start={0} end={354} duration={2} />, icon: UserGroupIcon },
     { id: 2, name: 'Happy Business Owners', value: <CountUp start={0} end={82} duration={2} />, icon: UserIcon },
     { id: 3, name: 'Expert Instructors', value: <CountUp start={0} end={200} duration={2} />, icon: ClipboardDocumentListIcon },
-    { id: 4, name: 'Project Done', value: <CountUp start={0} end={120} duration={2} />, icon: CodeBracketIcon },
+    { id: 4, name: 'Project Done', value: <CountUp start={0} end={258} duration={2} />, icon: CodeBracketIcon },
   ]
   return (
     <section className='bg-slate-100 lg:-mt-20'>

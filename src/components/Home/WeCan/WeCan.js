@@ -7,42 +7,42 @@ const WeCan = () => {
   const services = [
     {
       name: "Higher Level Education",
-      imgUrl: image.service,
+      imgUrl: image.seoOptimization,
       bgColour: "bg-green-100"
     }, {
       name: "Test Creation",
-      imgUrl: image.service,
+      imgUrl: image.social,
       bgColour: "bg-slate-100"
     }, {
       name: "Writing Services",
-      imgUrl: image.service,
+      imgUrl: image.webStrategy,
       bgColour: "bg-yellow-100"
     },
     {
       name: "K-12 Education",
-      imgUrl: image.service,
+      imgUrl: image.webdev3,
       bgColour: "bg-yellow-100"
     },
     {
-      name: "Books Writing",
-      imgUrl: image.service,
-      bgColour: "bg-yellow-100"
-    }, {
       name: "Live Tutoring",
-      imgUrl: image.service,
+      imgUrl: image.semMarketing,
       bgColour: "bg-rose-100"
     }, {
       name: "SEO Based Content",
-      imgUrl: image.service,
+      imgUrl: image.seo,
       bgColour: "bg-purple-100"
     }, {
       name: "Localization",
-      imgUrl: image.service,
+      imgUrl: image.smo,
       bgColour: "bg-blue-100"
     }, {
       name: "Video Creation",
-      imgUrl: image.service,
+      imgUrl: image.ppcTrend,
       bgColour: "bg-pink-100"
+    }, {
+      name: "Books Writing",
+      imgUrl: image.webStrategy,
+      bgColour: "bg-yellow-100"
     },
   ]
 

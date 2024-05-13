@@ -214,7 +214,7 @@ const Header = () => {
             '@media (minWidth: 1024px)': {
               marginLeft: '2rem',
             },
-            '@media (min-width: 1280px)': {
+            '@media (minWwidth: 1280px)': {
               marginLeft: '2rem',
             }
           }}
@@ -324,7 +324,7 @@ const Header = () => {
                       <ul className="py-5 px-5 gap-y-10 text-left">
                         {subServices[item.name].map((subService, index) => (
                           <li key={index} className="sm:hover:bg-indigo-50 hover:text-indigo-600">
-                            <Link href={subService.href}>{subService.name}</Link>
+                            <Link href={subService.href} onClick={() => setToggle(false)}>{subService.name} </Link>
                           </li>
                         ))}
                       </ul>

@@ -4,8 +4,6 @@ import styled, { keyframes, css } from "styled-components";
 import Cta from "@/components/CTA/Cta";
 import ScrollTrigger from "react-scroll-trigger";
 import Link from "next/link";
-import image from "@/constant/Images/image";
-import Image from "next/image";
 
 // Define your styled components
 const Marquee = styled.div`
@@ -76,9 +74,16 @@ function Stats({ stats, heading, para }) {
     // image.Toppr,
     // image.Chegg,
     "https://directioneducare.com/wp-content/uploads/2024/01/unacademy.png",
+    "https://th.bing.com/th/id/OIP.T8hRCPArvUVI4DYsrrO7rAHaEK?rs=1&pid=ImgDetMain",
     "https://directioneducare.com/wp-content/uploads/2024/01/numrade-1.png",
+
     "https://directioneducare.com/wp-content/uploads/2024/01/pw-logo-1.png",
+
     "https://directioneducare.com/wp-content/uploads/2024/01/vedantu-logo.png",
+    "https://i.pinimg.com/originals/c9/38/36/c938367ccf0d389a9e20a9b7527391ad.png",
+
+    "https://techmeright.com/wp-content/uploads/2022/02/doubtnut_owler_20200131_094650_original-768x170.png",
+
     // "https://directioneducare.com/wp-content/uploads/2024/01/pw-logo-1.png",
     // "https://directioneducare.com/wp-content/uploads/2024/01/vedantu-logo.png",
     // "https://directioneducare.com/wp-content/uploads/2024/01/numrade-1.png",
@@ -86,18 +91,18 @@ function Stats({ stats, heading, para }) {
   ];
 
   // const row2 = [
-  //   "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6c585c33ca6c71c79bb7.png",
-  //   "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/9dd55e54b5a28658bf4e.png",
-  //   "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/0384060dcbf73b6a707c.png",
-  //   "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/35e044b3354aaa0caed5.png",
-  //   "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/f50ae7cbf6cc805bdadc.png",
-  //   "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6c585c33ca6c71c79bb7.png",
+
+  //   "https://directioneducare.com/wp-content/uploads/2024/01/numrade-1.png",
+  //   "https://directioneducare.com/wp-content/uploads/2024/01/pw-logo-1.png",
+  //   "https://directioneducare.com/wp-content/uploads/2024/01/vedantu-logo.png",
+  //   "https://i.pinimg.com/originals/c9/38/36/c938367ccf0d389a9e20a9b7527391ad.png",
+  //   "https://directioneducare.com/wp-content/uploads/2024/01/unacademy.png",
   // ];
 
   return (
     <div className="bg-white app__stats py-24 sm:py-32 flex items-center lg:px-5 xl:px-0 flex-col gap-y-12">
       <Cta heading={heading} para={para} />
-      <div className="relative xl:max-w-6xl lg:max-w-4xl md:max-w-2xl xs:max-w-xs -mt-12 -mb-5 overflow-hidden">
+      <div className="relative xl:max-w-5xl lg:max-w-4xl md:max-w-2xl xs:max-w-xs -mt-12 -mb-5 overflow-hidden">
         <Marquee>
           <MarqueeGroup>
             {row1.map((el, index) => (

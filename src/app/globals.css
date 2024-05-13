@@ -730,7 +730,7 @@
 
 .svg-blue svg path,
 .svg-blue svg circle {
-  fill: #a667e5 !important;
+  fill: #3d91df  !important;
 }
 
 
@@ -954,6 +954,50 @@
   transition: 1s ease-in;
 }
 
+
+.service-card-five-blue {
+  padding: 50px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.service-card-five-blue:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3d91df;
+  z-index: -1;
+  -webkit-clip-path: circle(0% at 50% 50%);
+  clip-path: circle(0% at 50% 50%);
+  justify-content: center;
+}
+
+.service-card-five-blue:hover svg path,
+.service-card-five-blue:hover svg circle {
+  fill: #fff !important;
+}
+
+.service-card-five-blue:hover h3,
+.service-card-five-blue:hover p {
+  color: #ffffff !important;
+}
+
+.service-card-five-blue:hover:after {
+  -webkit-clip-path: circle(200% at 50% 50%);
+  clip-path: circle(200% at 50% 50%);
+  transition: 1s ease-in;
+}
+
 .service-card-five-purple {
   padding: 50px 30px;
   background-color: #ffffff;
@@ -1042,18 +1086,6 @@
 }
 
 
-.service-card-five-blue {
-  padding: 50px 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  justify-content: center;
-}
 
 .service-card-five-purple:after {
   position: absolute;

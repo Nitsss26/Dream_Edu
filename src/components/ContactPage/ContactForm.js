@@ -1,11 +1,10 @@
 "use client"
-import { useState } from "react";
+import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import image from "@/constant/Images/image";
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 import { FaPhoneSquareAlt } from "@react-icons/all-files/fa/FaPhoneSquareAlt";
 import Image from "next/image";
-import { useRef } from 'react';
 
 const initValues = {
   user_name: "",
@@ -67,7 +66,7 @@ export default function ContactForm({ heading, color }) {
 
   return (
     <section className={` ${color}`} >
-      <div className="app__container grid grid-cols-1 md:grid-cols-2 gap-12 sm: mb-6 md:py-32 lg:px-5 xl:px-0">
+      <div className="app__container grid grid-cols-1 md:grid-cols-2 gap-12 xs:py-20 md:py-32 lg:px-5 xl:px-0">
         <div className="my-auto sm: me-8">
           <Image src={image.getInTouch} alt="contact Us" />
         </div>
@@ -154,7 +153,6 @@ export default function ContactForm({ heading, color }) {
                       id="number"
                       value={values.user_contact}
                       onChange={handleChange}
-                      autoComplete="number"
                       className="block w-full pl-3 pr-10 py-2 text-base shadow-sm placeholder:text-gray-400 border border-gray-300 rounded-md bg-white text-gray-900 focus:outline-none focus:border-indigo-500 focus:ring-indigo-200"
                     />
                   </div>
@@ -219,3 +217,4 @@ export default function ContactForm({ heading, color }) {
     </section>
   );
 }
+
