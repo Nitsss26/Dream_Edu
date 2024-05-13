@@ -132,11 +132,17 @@ import p from "./p.png"
 import q from "./q.png"
 import r from "./r.png"
 import s from "./s.png"
+import aa from "./1.png"
+import bb from "./2.png"
+import cc from "./3.png"
+import dd from "./4.png"
+import ee from "./5.png"
+import ff from "./6.png"
 
 
 const image = {
   a,
-  b, c, d, e, f, w, x, y, z, k, l, n, o, p, q, r, s,
+  b, c, d, e, f, w, x, y, z, k, l, n, o, p, q, r, s, aa, bb, cc, dd, ee, ff,
   PW,
   Chegg,
   Toppr,

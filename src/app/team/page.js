@@ -1,5 +1,6 @@
 import React from "react";
-
+import Image from "next/image";
+import image from "@/constant/Images/image";
 
 export const metadata = {
     title: 'Dream Education / Team ',
@@ -24,7 +25,13 @@ function Team() {
 
                     <div className="col-sm-6 col-md-4">
                         <div className="team-item bg-gray-200 text-center shadow-lg p-6 rounded-lg transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white">
-                            <img src="https://i.ibb.co/bPfxM9d/download-image-1715346898787-removebg-preview.png" className="team-img w-28 h-28 rounded-full mx-auto mb-4" alt="pic" width={112} height={112} />
+                            <Image
+                                src={image.aa}
+                                alt="pic"
+                                className="team-img w-28 h-28 rounded-full mx-auto mb-4"
+                                width={112}
+                                height={112}
+                            />
                             <h3 className="text-xl font-semibold mb-1">MR. DEEPAk KUMAR </h3>
                             <div className="team-info"><p>CEO Founder</p></div>
                             <p className="font-semibold">As CEO Founder, our inspirational leader directs our innovation efforts, driving our team towards substantial growth and worldwide impact through astute leadership and relentless dedication.</p>
@@ -33,7 +40,13 @@ function Team() {
 
                     <div className="col-sm-6 col-md-4">
                         <div className="team-item bg-gray-200 text-center shadow-lg p-6 rounded-lg transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white">
-                            <img src="https://i.ibb.co/c3qnNnj/Whats-App-Image-2024-05-10-at-4-31-27-PM-removebg-preview.png" className="team-img w-28 h-28 rounded-full mx-auto mb-4" alt="pic" width={112} height={112} />
+                            <Image
+                                src={image.bb}
+                                alt="pic"
+                                className="team-img w-28 h-28 rounded-full mx-auto mb-4"
+                                width={112}
+                                height={112}
+                            />
                             <h3 className="text-xl font-semibold mb-1">ANKITA GAUR</h3>
                             <div className="team-info"><p>Project Manager</p></div>
                             <p className="font-semibold">As our Project Manager is the backbone of our projects, ensuring smooth execution and fostering collaboration among team members, driving us toward our goals with dedication and expertise.</p>
@@ -44,7 +57,13 @@ function Team() {
 
                     <div className="col-sm-6 col-md-4">
                         <div className="team-item bg-gray-200 text-center shadow-lg p-6 rounded-lg transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white">
-                            <img src="https://i.ibb.co/F5f8y4n/Whats-App-Image-2024-05-10-at-4-28-36-PM-1-removebg-preview.png" className="team-img w-28 h-28 rounded-full mx-auto mb-4" alt="pic" width={112} height={112} />
+                            <Image
+                                src={image.cc}
+                                alt="pic"
+                                className="team-img w-28 h-28 rounded-full mx-auto mb-4"
+                                width={112}
+                                height={112}
+                            />
                             <h3 className="text-xl font-semibold mb-1">SHREYANSI KHANDELWAL</h3>
                             <div className="team-info"><p>HR Manager </p></div>
                             <p className="font-semibold">Playing a pivotal role in our organization. Our HR Manager nurtures our team, fostering a positive work environment, facilitating growth opportunities, and ensuring our people are valued and supported.</p>
@@ -53,7 +72,13 @@ function Team() {
 
                     <div className="col-sm-6 col-md-4">
                         <div className="team-item bg-gray-200 text-center shadow-lg p-6 rounded-lg transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white">
-                            <img src="https://i.ibb.co/hBshyND/Whats-App-Image-2024-05-13-at-7-25-52-PM-1-removebg-preview.png" className="team-img w-28 h-28 rounded-full mx-auto mb-4" alt="pic" width={112} height={112} />
+                            <Image
+                                src={image.dd}
+                                alt="pic"
+                                className="team-img w-28 h-28 rounded-full mx-auto mb-4"
+                                width={112}
+                                height={112}
+                            />
                             <h3 className="text-xl font-semibold mb-1">MIZBA Naaz</h3>
                             <div className="team-info"><p>HR Team Leader</p></div>
                             <p className="font-semibold">As our HR Team Leader, Mizba Khan plays a pivotal role in overseeing our human resources department, ensuring that our team members are supported, motivated, and aligned with our company&apos;s objectives.</p>
@@ -63,7 +88,13 @@ function Team() {
 
                     <div className="col-sm-6 col-md-4">
                         <div className="team-item bg-gray-200 text-center shadow-lg p-6 rounded-lg transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white">
-                            <img src="https://i.ibb.co/7JHkCRL/Whats-App-Image-2024-05-13-at-7-25-53-PM-1-removebg-preview.png" className="team-img w-28 h-28 rounded-full mx-auto mb-4" alt="pic" width={112} height={112} />
+                            <Image
+                                src={image.ee}
+                                alt="pic"
+                                className="team-img w-28 h-28 rounded-full mx-auto mb-4"
+                                width={112}
+                                height={112}
+                            />
                             <h3 className="text-xl font-semibold mb-1">SANSKRITI TRIPATHI</h3>
                             <div className="team-info"><p>Business Development Associate</p></div>
                             <p className="font-semibold">Our Business Development Associate from Chandler, Arizona, USA, identifies opportunities, builds client relationships, and drives growth. With an M.TECH from the USA, she brings expertise</p>
@@ -72,7 +103,13 @@ function Team() {
 
                     <div className="col-sm-6 col-md-4">
                         <div className="team-item bg-gray-200 text-center shadow-lg p-6 rounded-lg transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white">
-                            <img src="https://i.ibb.co/sb8LYV1/Whats-App-Image-2024-05-13-at-7-25-52-PM-removebg-preview.png" className="team-img w-28 h-28 rounded-full mx-auto mb-4" alt="pic" width={112} height={112} />
+                            <Image
+                                src={image.ff}
+                                alt="pic"
+                                className="team-img w-28 h-28 rounded-full mx-auto mb-4"
+                                width={112}
+                                height={112}
+                            />
                             <h3 className="text-xl font-semibold mb-1">KAJAL PRAJAPATI</h3>
                             <div className="team-info"><p>HR Manager</p></div>
                             <p className="font-semibold">Our HR Manager oversees HR operations in the company, ensuring a positive work environment. With dedication and expertise, she supports team members and drives organizational goals.</p>
