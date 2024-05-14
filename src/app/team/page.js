@@ -81,7 +81,7 @@ function Team() {
                             />
                             <h3 className="text-xl font-semibold mb-1">MIZBA Naaz</h3>
                             <div className="team-info"><p>HR Team Leader</p></div>
-                            <p className="font-semibold">As our HR Team Leader, Mizba Khan plays a pivotal role in overseeing our human resources department, ensuring that our team members are supported, motivated, and aligned with our company&apos;s objectives.</p>
+                            <p className="font-semibold">As our HR Team Leader, Mizba Naaz plays a pivotal role in overseeing our human resources department, ensuring that our team members are supported, motivated, and aligned with our company&apos;s objectives.</p>
                         </div>
                     </div>
 
@@ -97,7 +97,7 @@ function Team() {
                             />
                             <h3 className="text-xl font-semibold mb-1">SANSKRITI TRIPATHI</h3>
                             <div className="team-info"><p>Business Development Associate</p></div>
-                            <p className="font-semibold">Our Business Development Associate from Chandler, Arizona, USA, identifies opportunities, builds client relationships, and drives growth. With an M.TECH from the USA, she brings expertise</p>
+                            <p className="font-semibold">Our Business Development Associate from Chandler, Arizona, USA, identifies opportunities, builds client relationships, and drives growth. With an M.S degree from the USA, she brings expertise</p>
                         </div>
                     </div>
 
