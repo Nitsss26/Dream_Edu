@@ -124,7 +124,7 @@ const Footer = () => {
                     className="text-sm text-white text-sbold flex items-center justify-center md:justify-start gap-2"
                     href="mailto:dreameducation@gmail.com"
                   >
-                    <FaEnvelope className="sm: ms-1 md:ms-0" /> infodreamedu.com
+                    <FaEnvelope className="sm: ms-1 md:ms-0" /> infodreameducation.com
                   </a>
                 </li>
                 <li className="mt-8 sm: ms-28 md:ms-0">
@@ -171,7 +171,7 @@ const Footer = () => {
 
       <div className="text-center py-6 mt-4 md:mt-8 lg:mt-12 mb-[4.5rem] md:mb-0">
         <p className="text-sm text-slate-200 sm: px-14 font-bold hover:text-white transition-all duration-300">
-          © Copyright <a href="#">Dream Education.com</a> 2020. All rights reserved.
+          © Copyright <a href="#">infodreameducation.com</a> 2020. All rights reserved.
         </p>
       </div>
 
