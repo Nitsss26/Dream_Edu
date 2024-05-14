@@ -97,7 +97,7 @@ function Team() {
                             />
                             <h3 className="text-xl font-semibold mb-1">SANSKRITI TRIPATHI</h3>
                             <div className="team-info"><p>Business Development Associate</p></div>
-                            <p className="font-semibold">Our Business Development Associate from Chandler, Arizona, USA, identifies opportunities, builds client relationships, and drives growth. With an M.S degree from the USA, she brings expertise</p>
+                            <p className="font-semibold">Our Business Development Associate from Chandler, Arizona, USA, identifies opportunities, builds client relationships, and drives growth. With a M.S degree from the USA, she brings expertise</p>
                         </div>
                     </div>
 
