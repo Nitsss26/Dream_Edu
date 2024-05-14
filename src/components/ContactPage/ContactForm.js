@@ -94,7 +94,7 @@ export default function ContactForm({ heading, color }) {
                   <span className="text-[#EA4335]">
                     <FaEnvelope />
                   </span>{" "}
-                  infodreamedu.com
+                  infodreameducation.com
                 </a>
               </div>
 
