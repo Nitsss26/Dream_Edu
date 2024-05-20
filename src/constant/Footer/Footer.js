@@ -31,11 +31,11 @@ const Footer = () => {
               About Company
             </h3>
             {/* <Image src={image.webdevWhite} alt="WebDev" className="mx-auto md:mx-0" width={150} height={150} /> */}
-            <p className="text-base -mt-2 text-slate-200 font-bold sm: px-5 md:px-0 hover:text-white transition-all duration-300">With 8 years of online education &
+            <p className="text-base -mt-2 text-slate-200 font-bold sm: px-5 md:px-0 hover:text-white transition-all duration-300">With 4 years of online education &
               development skills, we have worked
               on 100+ Internet development
               projects. We are a part of BroLabs
-              Innovation Pvt. Ltd., and we are 38
+              Innovation Pvt. Ltd., and we are 218
               people working together as a team
               with just one goal: to take your
               business to a new level.</p>
