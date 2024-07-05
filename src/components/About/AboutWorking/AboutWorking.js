@@ -1,19 +1,60 @@
+'use client'
 import image from "@/constant/Images/image"
+import React, { useState, useEffect, useRef } from 'react';
 import Image from "next/image"
 import './AboutWorking.css'
 
 const AboutWorking = () => {
+
+    const [data, setData] = useState(null);
+    const scrollRef = useRef();
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/about/666ddfa3f806f21ce41b74df`);
+                const result = await response.json();
+                setData(result);
+            } catch (error) {
+                console.error("Error fetching data: ", error);
+            }
+        };
+        fetchData();
+
+        // Restore scroll position
+        const savedScrollPosition = sessionStorage.getItem('scrollPosition');
+        if (savedScrollPosition) {
+            window.scrollTo(0, parseInt(savedScrollPosition, 1));
+        }
+
+        const saveScrollPosition = () => {
+            sessionStorage.setItem('scrollPosition', window.scrollY);
+        };
+
+        window.addEventListener('beforeunload', saveScrollPosition);
+        return () => {
+            window.removeEventListener('beforeunload', saveScrollPosition);
+        };
+    }, []);
+
+    if (!data) {
+        return (
+            <div className="h-screen flex justify-center items-center hidden">
+                <div className="lds-ripple"><div></div><div></div></div>
+            </div>
+        )
+    }
+
     return (
-        <section className="about-working-process">
+        <section className="about-working-process" >
             <div className="app__container">
                 <div className="grid grid-cols-1">
                     <div>
                         <div className="text-center about-padding">
                             <div className="section-sub-title">
-                                <h4 className="text-2xl pb-4 font-extrabold capitalize">know more about us</h4>
+                                <h4 className="text-2xl pb-4 font-extrabold capitalize">{data.field5}</h4>
                             </div>
                             <div className="primary-heading">
-                                <h2>Our working <span className="highlight">process</span></h2>
+                                <h2>{data.field6} <span className="highlight">{data.field7}</span></h2>
                             </div>
                         </div>
                     </div>

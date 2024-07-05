@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function Cta({ heading, para }) {
+export default function Cta({ data, heading, para }) {
   return (
     <div className="-mt-44 mb-10 text-2xl font-semibold">
-      Trusted Partners & Clients
+      {data.field1}
       {/* <div className="relative isolate overflow-hidden bg-indigo-700 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
         <svg
           viewBox="0 0 1024 1024"

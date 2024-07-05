@@ -1,43 +1,15 @@
-import AboutWorking from "@/components/About/AboutWorking/AboutWorking"
-import Award from "@/components/About/Award/Award"
-import BestFeature from "@/components/About/BestFeature/BestFeature"
-import { PageWrapper } from "../page-wrapper"
-import ContactForm from "@/components/ContactPage/ContactForm"
-import Director from "../Director/page"
+import React from 'react'
+import About from './pagefinal'
 
 export const metadata = {
-  title: 'Dream Education / About',
-  description: 'Welcome To Dream Education',
+  title: 'Dream Education/About',
+  description: 'Welcome To Dream Education.',
 }
-const aboutSections = [
-  {
-    section: <Director />
-  },
-  {
-    section: <Award />
-  },
-  {
-    section: <BestFeature />
-  },
-  {
-    section: <AboutWorking />
-  },
 
-]
-const About = () => {
+const page = () => {
   return (
-    <>
-      {
-        aboutSections.map((i) => {
-          return (
-            <PageWrapper key={i}>
-              {i.section}
-            </PageWrapper>
-          )
-        })
-      }
-    </>
+    <About />
   )
 }
 
-export default About
+export default page

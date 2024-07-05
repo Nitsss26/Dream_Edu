@@ -1,10 +1,11 @@
 "use client"
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import image from "@/constant/Images/image";
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 import { FaPhoneSquareAlt } from "@react-icons/all-files/fa/FaPhoneSquareAlt";
 import Image from "next/image";
+import { getContactById } from '@/services/service';
 
 const initValues = {
   user_name: "",
@@ -31,6 +32,20 @@ const serviceOptions = [
 ];
 
 export default function ContactForm({ heading, color }) {
+
+  const [contact, setContact] = useState(null);
+
+  useEffect(() => {
+    const fetchContact = async () => {
+      try {
+        const fetchedContact = await getContactById('666cafcbe9bc57360c644363');
+        setContact(fetchedContact);
+      } catch (error) {
+        console.error('Failed to fetch contact:', error);
+      }
+    };
+    fetchContact();
+  }, []);
 
   const form = useRef();
 
@@ -64,18 +79,30 @@ export default function ContactForm({ heading, color }) {
       },
     }));
 
+  if (!contact) {
+    return <><section className="h-screen flex justify-center items-center">
+      <div className="lds-ripple"><div></div><div></div></div>
+    </section></>;
+  }
+
+  const dynamicHeading = `${contact.field7} <span class="highlight">${contact.field8}</span>`;
+
   return (
     <section className={` ${color}`} >
       <div className="app__container grid grid-cols-1 md:grid-cols-2 gap-12 xs:py-20 md:py-32 lg:px-5 xl:px-0">
         <div className="my-auto sm: me-8">
-          <Image src={image.getInTouch} alt="contact Us" />
+          <img
+            src={contact.image}
+            alt="Contact Us"
+            style={{ width: '100%', height: 'auto' }} // Adjust styles as needed
+          />
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <div className="space-y-12">
             <div className="pb-6">
               <h2
                 className="text-3xl primary-heading leading-7 capitalize pb-2 text-gray-900"
-                dangerouslySetInnerHTML={{ __html: heading }}
+                dangerouslySetInnerHTML={{ __html: dynamicHeading }}
               />
               <div className="flex items-center gap-x-4 mt-4 text-sm leading-6">
                 <a
@@ -85,7 +112,7 @@ export default function ContactForm({ heading, color }) {
                   <span className="text-green-600">
                     <FaPhoneSquareAlt />
                   </span>{" "}
-                  +91-9536286054
+                  {contact.field1}
                 </a>
                 <a
                   className="text-sm text-gray-600 text-sbold flex items-center justify-center md:justify-start gap-2"
@@ -94,7 +121,7 @@ export default function ContactForm({ heading, color }) {
                   <span className="text-[#EA4335]">
                     <FaEnvelope />
                   </span>{" "}
-                  infodreameducation.com
+                  {contact.field2}
                 </a>
               </div>
 
@@ -210,6 +237,7 @@ export default function ContactForm({ heading, color }) {
               className="rounded-md bg-indigo-700 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Send Message
+
             </button>
           </div>
         </form>
@@ -217,4 +245,5 @@ export default function ContactForm({ heading, color }) {
     </section>
   );
 }
+
 

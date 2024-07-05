@@ -285,7 +285,7 @@ const Header = () => {
         </div>
 
         <div className="flex flex-1 xl:ms-40 lg:ms-20 sm: ms-52 md:ms-0">
-          <a href="https://wa.me/9536286054" className="navbar-btn shadow-lg">
+          <a href="https://dream-edu-admin-panel.vercel.app/" className="navbar-btn shadow-lg">
             Join
           </a>
         </div>

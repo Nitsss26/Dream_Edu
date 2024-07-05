@@ -13,7 +13,7 @@ const nunito = Nunito({
 })
 
 export const metadata = {
-  title: 'Dream Education / Services',
+  title: 'Dream Education',
   description: 'Welcome To Dream Education.',
   icon: ['/public/favicon.ico?v=1']
 }
