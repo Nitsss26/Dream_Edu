@@ -49,23 +49,24 @@ import BestFeature from "@/components/About/BestFeature/BestFeature";
 import { PageWrapper } from "../page-wrapper";
 import Director from "../Director/page";
 
-const aboutSections = [
-    {
-        component: Director,
-    },
-    {
-        component: Award,
-    },
-    {
-        component: BestFeature,
-    },
-    {
-        component: AboutWorking,
-    },
-];
-
 const About = () => {
     const [aboutData, setAboutData] = useState(null);
+
+    const aboutSections = [
+        {
+            component: Director,
+        },
+        {
+            component: Award,
+        },
+        {
+            component: BestFeature,
+        },
+        {
+            component: AboutWorking,
+        },
+    ];
+
 
     useEffect(() => {
         const fetchAboutData = async () => {
