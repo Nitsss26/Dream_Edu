@@ -198,21 +198,21 @@ const Team1 = () => {
             description: teamData.description6,
         },
         {
+            image: teamData.image8,
+            name: teamData.field18,
+            position: teamData.description10,
+            description: teamData.description8,
+        },
+        {
             image: teamData.image7,
             name: teamData.title,
             position: teamData.field17,
             description: teamData.description7,
         },
         {
-            image: teamData.image8,
-            name: teamData.field18,
-            position: teamData.field19,
-            description: teamData.description8,
-        },
-        {
             image: teamData.image9,
-            name: teamData.field20,
-            position: teamData.field21,
+            name: teamData.field16,
+            position: teamData.field2,
             description: teamData.description9,
         },
     ];
@@ -246,7 +246,7 @@ const Team1 = () => {
 
                 <div className="grid grid-cols-1 xs:px-10 md:px-40 xl:px-28 lg:px-5 xl:mx-32 lg:grid-cols-3 gap-8">
                     {teamMembers.map((member, index) => (
-                        <div key={index} className={`col-sm-6 col-md-4 ${index === 6 ? 'col-start-2' : ''}`}>
+                        <div key={index} className={`col-sm-6 col-md-4`}>
                             {member.name && member.position && (
                                 <div className="team-item bg-gray-200 text-center shadow-lg p-6 rounded-lg transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white">
                                     <Image
