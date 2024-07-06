@@ -1,7 +1,7 @@
 import image from "@/constant/Images/image";
 import Image from "next/image";
 import "./AboutUs.css";
-import Director from "@/app/Director/page";
+import Director from "@/components/About/Director/Direct";
 import Hero from "../../Home/Hero/Hero";
 import Home from "@/components/Home/Hero/Hero";
 

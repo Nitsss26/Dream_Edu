@@ -47,7 +47,7 @@ import AboutWorking from "@/components/About/AboutWorking/AboutWorking";
 import Award from "@/components/About/Award/Award";
 import BestFeature from "@/components/About/BestFeature/BestFeature";
 import { PageWrapper } from "../page-wrapper";
-import Director from "../Director/page";
+import Director from "../../components/About/Director/Direct";
 
 const About = () => {
     const [aboutData, setAboutData] = useState(null);
